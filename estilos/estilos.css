@@ -13,8 +13,13 @@ body {
 
 }
 
+main {
+    max-width: 840px;
+}
+
 nav {
     background-color: darkblue;
+    padding: 0;
 }
 
 nav a {
@@ -50,7 +55,7 @@ aside {
 }
 
 aside img {
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
