@@ -26,6 +26,22 @@ body {
     color: var(--cor-segundaria);
 }
 
+header {
+    display: grid;
+    margin: 1rem auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    background-color: var(--cor-segundaria);
+}
+
+nav {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
 header,
 main,
 footer {
@@ -45,8 +61,8 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 20px;
+    padding: 10px;
 }
 
 .socialmedia a {
@@ -59,7 +75,7 @@ article {
 }
 
 .hero img {
-    display: block;
+    display: flex;
     max-width: 100%;
     height: auto;
 }
@@ -82,4 +98,9 @@ h1 {
 
 .hero article {
     position: absolute;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
 }
