@@ -66,20 +66,11 @@ section,
 article {
     margin: 20px;
     padding: 10px;
+    gap: 15px;
 }
 
 .redes-sociais a {
     text-decoration: none;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-}
-
-.hero img {
-    max-width: 100%;
-    height: auto;
 }
 
 h1 {
@@ -93,6 +84,17 @@ h1 {
     color: var(--cor-secundaria);
 }
 
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .hero article img {
     float: right;
     width: 125px;
@@ -100,6 +102,9 @@ h1 {
 
 .hero article {
     position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
 }
 
 .grid {
