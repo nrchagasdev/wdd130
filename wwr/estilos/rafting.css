@@ -123,11 +123,9 @@ main {
     left: 0;
     width: 100%;
     padding: 1rem;
-
     text-align: center;
     font-size: clamp(1.8rem, 4vw, 2.8rem);
-
-    color: var(--cor-secundaria);
+    color: var(--cor-destaque2);
     background-color: rgba(18, 59, 93, 0.85);
 }
 
