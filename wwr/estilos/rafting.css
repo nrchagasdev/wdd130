@@ -19,13 +19,12 @@
 
 body {
     font-family: var(--font-body);
-    color: var(--cor-segundaria);
+    color: var(--cor-primaria);
 }
 
 header {
     display: grid;
     margin: 1rem auto;
-    justify-content: space-between;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     width: auto;
@@ -57,7 +56,6 @@ h2 {
     text-align: center;
 }
 
-nav,
 p,
 section,
 article {
@@ -75,7 +73,6 @@ article {
 }
 
 .hero img {
-    display: flex;
     max-width: 100%;
     height: auto;
 }
