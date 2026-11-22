@@ -31,6 +31,11 @@ header {
     background-color: var(--cor-destaque1);
 }
 
+header img {
+    width: 150px;
+    height: auto;
+}
+
 nav {
     display: flex;
 
@@ -100,4 +105,56 @@ h1 {
 .grid {
     display: grid;
     place-items: center;
+}
+
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.historia h2 {
+    grid-column: 1 / 4;
+}
+
+.historia img {
+    width: 100%;
+    height: auto;
+}
+
+.aventura {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.aventura h2 {
+    grid-column: 1 / 6;
+}
+
+.aventura img {
+    width: 100%;
+    height: auto;
+}
+
+.aventura figure {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: flex;
+    gap: 15px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
 }
