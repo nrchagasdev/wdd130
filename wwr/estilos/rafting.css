@@ -1,14 +1,12 @@
 :root {
     --cor-primaria: #123B5D;
-    /* Azul-rio escuro */
     --cor-secundaria: #F4F1DE;
-    /* Creme claro */
     --cor-destaque1: #0F6B78;
-    /* Azul-petróleo */
     --cor-destaque2: #E6A21A;
-    /* Amarelo dourado */
-    --font-titulo: 'Montserrat', sans-serif;
-    --font-body: 'Lato', sans-serif;
+    --cor-hero-titulo: rgba(18, 59, 93, 0.85);
+    --cor-hero-artigo: rgba(244, 241, 222, 0.94);
+    --font-titulo: Arial, sans-serif;
+    --font-body: Arial, sans-serif;
 }
 
 * {
@@ -52,12 +50,10 @@ header {
     grid-template-columns: 180px 1fr;
     align-items: center;
     gap: 2rem;
-
     max-width: none;
     width: 100%;
     margin: 0 auto;
     padding: 1rem 2rem;
-
     background-color: var(--cor-destaque1);
     border-radius: 4px;
 }
@@ -126,7 +122,7 @@ main {
     text-align: center;
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     color: var(--cor-destaque2);
-    background-color: rgba(18, 59, 93, 0.85);
+    background-color: var(--cor-hero-titulo);
 }
 
 /* imagem principal */
@@ -136,15 +132,12 @@ main {
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
-
     display: flex;
     align-items: center;
     gap: 1.5rem;
-
     width: 90%;
     padding: 1.5rem;
-
-    background-color: rgba(244, 241, 222, 0.94);
+    background-color: var(--cor-hero-artigo);
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -169,10 +162,8 @@ main {
     grid-template-columns: 1fr 200px 1fr;
     align-items: center;
     gap: 1.5rem;
-
     margin: 2rem 0;
     padding: 1.5rem;
-
     background-color: var(--cor-secundaria);
     border-radius: 4px;
 }
@@ -201,10 +192,8 @@ main {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 1.2rem;
-
     margin: 2rem 0;
     padding: 1.5rem;
-
     text-align: center;
     border: 1px solid var(--cor-primaria);
     border-radius: 4px;
