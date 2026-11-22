@@ -45,7 +45,7 @@ p {
     line-height: 1.7;
 }
 
-/* CABEÇALHO */
+/* cabeçalho */
 
 header {
     display: grid;
@@ -53,9 +53,9 @@ header {
     align-items: center;
     gap: 2rem;
 
-    max-width: 1200px;
-    width: 95%;
-    margin: 1rem auto;
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
     padding: 1rem 2rem;
 
     background-color: var(--cor-destaque1);
@@ -68,7 +68,7 @@ header img {
     justify-self: center;
 }
 
-/* NAVEGAÇÃO PRINCIPAL */
+/* navegação principal */
 
 header nav {
     display: flex;
@@ -93,15 +93,15 @@ header nav a:focus-visible {
     outline: none;
 }
 
-/* CONTEÚDO PRINCIPAL */
+/* conteúdo principal */
 
 main {
-    max-width: 1100px;
-    width: 95%;
-    margin: 2rem auto;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
 }
 
-/* HERO */
+/* hero */
 
 .hero {
     position: relative;
@@ -131,7 +131,7 @@ main {
     background-color: rgba(18, 59, 93, 0.85);
 }
 
-/* ARTIGO SOBRE A IMAGEM PRINCIPAL */
+/* imagem principal */
 
 .hero article {
     position: absolute;
@@ -164,7 +164,7 @@ main {
     border-radius: 4px;
 }
 
-/* SEÇÃO HISTÓRIA */
+/* seção história */
 
 .historia {
     display: grid;
@@ -197,7 +197,7 @@ main {
     border-radius: 4px;
 }
 
-/* SEÇÃO AVENTURA */
+/* seção aventura */
 
 .aventura {
     display: grid;
@@ -242,22 +242,18 @@ main {
     font-size: 0.95rem;
 }
 
-/* RODAPÉ */
+/* rodapé */
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
-
-    max-width: 1200px;
-    width: 95%;
-    margin: 2rem auto 0;
+    max-width: none;
+    width: 100%;
+    margin: 0 auto 0;
     padding: 1.5rem 2rem;
-
     background-color: var(--cor-destaque1);
     color: var(--cor-secundaria);
-    border-radius: 4px;
 }
 
 footer p {
@@ -285,125 +281,4 @@ footer img {
 
 footer nav.redes-sociais a:hover img {
     transform: scale(1.12);
-}
-
-/* RESPONSIVIDADE - TABLETS */
-
-@media screen and (max-width: 768px) {
-
-    header {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 1rem;
-    }
-
-    header nav {
-        justify-content: center;
-    }
-
-    .hero {
-        min-height: 400px;
-    }
-
-    .hero > img {
-        height: 400px;
-    }
-
-    .historia {
-        grid-template-columns: 1fr 180px 1fr;
-        gap: 0.8rem;
-        padding: 1rem;
-    }
-
-    .aventura {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
-/* RESPONSIVIDADE - CELULARES */
-
-@media screen and (max-width: 550px) {
-
-    header {
-        padding: 1rem;
-    }
-
-    header nav {
-        gap: 0.2rem;
-    }
-
-    header nav a {
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-
-    main {
-        width: 94%;
-    }
-
-    .hero {
-        min-height: 480px;
-    }
-
-    .hero > img {
-        height: 480px;
-    }
-
-    .hero h1 {
-        top: 1rem;
-    }
-
-    .hero article {
-        top: 55%;
-        left: 4%;
-        width: 92%;
-        transform: translateY(-50%);
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 1rem;
-        gap: 0.8rem;
-    }
-
-    .hero article img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .historia {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .historia h2 {
-        grid-column: 1;
-    }
-
-    .historia p {
-        text-align: center;
-    }
-
-    .historia img {
-        width: 100%;
-        height: 200px;
-    }
-
-    .aventura {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .aventura h2 {
-        grid-column: 1 / -1;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5rem 1rem;
-    }
-
-    footer nav.redes-sociais {
-        justify-content: center;
-    }
 }
